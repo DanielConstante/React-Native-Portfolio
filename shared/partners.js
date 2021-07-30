@@ -1,10 +1,10 @@
 export const PARTNERS = [
     {
         id: 0,
-        name: "Bootstrap Outfitters",
-        image: "/assets/images/bootstrap-logo.png",
+        name: "About Me",
+        image: "/assets/images/dcabout.jpg",
         featured: false,
-        description: "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
+        description: "I’m a Front-End Developer located in Dallas/DFW Area. I have a serious passion for develop webs and UI effects, animations and creating intuitive, dynamic user experiences. Well-organised person, problem solver, independent employee with high attention to detail. Fan of video games, outdoor activities, TV series and Action movies. A family person and father of three kids, \nBirthday: August 20, 1986 \nWebsite: www.danielconstante.netlify.app/ \nPhone: 469-703-5148 \nCity: New Jersey, USA \nAge: 34 \nEmail: daniel_constante@hotmail.com \nFreelance: Available \nI help designers, small agencies and businesses bring their ideas to life. Powered by VS Code, Wordpress or Bootstrap. Interested in the entire frontend spectrum and working on ambitious projects with positive people."
     },
     {
         id: 1,
