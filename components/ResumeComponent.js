@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Platform, StyleSheet, Text, ScrollView, Image, Linking } from 'react-native';
-import { Card, Button, Icon } from 'react-native-elements';
+
 
 class Resume extends Component {
     constructor(props) {
