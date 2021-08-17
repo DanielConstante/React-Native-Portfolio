@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Platform, StyleSheet, Text, ScrollView, Image } from 'react-native';
-import { Card } from 'react-native-elements';
+import { View, Platform, StyleSheet, Text, ScrollView, Image, Linking } from 'react-native';
+import { Card, Button, Icon } from 'react-native-elements';
 
 class Resume extends Component {
     constructor(props) {
@@ -600,35 +600,171 @@ class Resume extends Component {
                         </View>
                         <View style={styles.lineCer}></View>
                     </View>
-                    <View style={styles.item}>
-                        <View style={styles.itemLeft}>
-                            <View style={styles.circular}></View>
-                            <Text style={styles.itemText}>
-                             PROJECT MANAGEMENT PROFESSIONAL
+                    <View>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>
+                                    PROJECT MANAGEMENT PROFESSIONAL
+                                </Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent}>
+                                Udemy, Inc.
                             </Text>
                         </View>
+                        <View style={styles.lineCer}></View>
+                        <View>
+                            <Text style={styles.textcontent}>
+                                February 2021
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
+                    </View>
+
+                    {/*                  Languages           */}
+
+                    <View>
+                        <View>
+                            <Text style={styles.textTitle}>Projects & Colaborations</Text>
+                        </View>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>Bootstrap Campsites Website</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://nucampsitetx.netlify.app/')} >
+                               URL to Nucamp Campsites Bootstrap
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/git-test')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
                     </View>
                     <View>
-                        <Text style={styles.textcontent}>
-                            Udemy, Inc.
-                        </Text>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>Bootstrap Portfolio Website</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://danielconstante.netlify.app/')} >
+                               URL to Bootstrap Portfolio
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/nucamp-portfolio-project')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
                     </View>
-                    <View style={styles.lineCer}></View>
                     <View>
-                        <Text style={styles.textcontent}>
-                        February 2021
-                        </Text>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>React Campsites Website</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://react-campsites.netlify.app/')} >
+                               URL to Nucamp Campsites React
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/react-campsites')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
                     </View>
-                    <View style={styles.line}></View>
-
-
-                </View>
-                <View>
-
-
-
-
-
+                    <View>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>React Portfolio Website</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://danielconstantereact.netlify.app/')} >
+                               URL to React Portfolio 
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/React-Portfolio')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
+                    </View>
+                    <View>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>React-Native Campsites App</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('exp://exp.host/@danielconstante/nucampsite')} >
+                               URL to React-Native Portfolio 
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/React-Native-Campsites')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
+                    </View>
+                    <View>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>React-Native Portfolio App</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent}>
+                               URL to React-Native Portfolio 
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/React-Native-Portfolio')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
+                    </View>
+                    <View>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>JavaScript Text Animations</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://textanimations.netlify.app/')}>
+                               URL to Text Animations 
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/text-animations')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
+                    </View>
+                    <View>
+                        <View style={styles.item}>
+                            <View style={styles.itemLeft}>
+                                <View style={styles.circular}></View>
+                                <Text style={styles.itemText}>Google Page Clone</Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Text style={styles.textcontent}>
+                               No URL for copy right
+                            </Text>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/google-clone')}>
+                                Source Code/GitHub
+                            </Text>
+                        </View>
+                        <View style={styles.line}></View>
+                    </View>
+                    
 
 
 
@@ -707,7 +843,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#16f1d4',
         marginLeft: 20,
         marginTop: -40,
-        
+
     },
     line3: {
         flexDirection: 'row',
@@ -741,7 +877,8 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontWeight: 'bold'
         //maxWidth: '80%',
-    },
+    }
+
 
 });
 
