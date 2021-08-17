@@ -25,7 +25,7 @@ export const CAMPSITES = [
     },
     {
         id: 3,
-        name:"Front end development",
+        name:"Front end Development",
         image: "/assets/images/dev.png",
         elevation: 42,
         featured: true,

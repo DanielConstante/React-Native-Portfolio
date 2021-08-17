@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
-import Directory from './DirectoryComponent';
+import Portfolio from './PortfolioComponent';
 import About from './AboutComponent';
+import Resume from './ResumeComponent';
 import Contact from './ContactComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
 import Constants from 'expo-constants';
@@ -13,13 +14,14 @@ import { createAppContainer } from 'react-navigation';
 import SafeAreaView from 'react-native-safe-area-view';
 
 
-const DirectoryNavigator = createStackNavigator(
+
+const PortfolioNavigator = createStackNavigator(
     {
-        Directory: { 
-            screen: Directory,
-            navigationOptions: ({navigation}) => ({
+        Portfolio: {
+            screen: Portfolio,
+            navigationOptions: ({ navigation }) => ({
                 headerLeft: <Icon
-                    name='list'
+                    name='briefcase'
                     type='font-awesome'
                     iconStyle={styles.stackIcon}
                     onPress={() => navigation.toggleDrawer()}
@@ -29,7 +31,7 @@ const DirectoryNavigator = createStackNavigator(
         CampsiteInfo: { screen: CampsiteInfo }
     },
     {
-        initialRouteName: 'Directory',
+        initialRouteName: 'Portfolio',
         defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#0B0C10'
@@ -47,7 +49,7 @@ const HomeNavigator = createStackNavigator(
         Home: { screen: Home }
     },
     {
-        defaultNavigationOptions: ({navigation}) => ({
+        defaultNavigationOptions: ({ navigation }) => ({
             headerStyle: {
                 backgroundColor: '#0B0C10'
             },
@@ -71,7 +73,7 @@ const AboutNavigator = createStackNavigator(
         About: { screen: About }
     },
     {
-        defaultNavigationOptions: ({navigation}) => ({
+        defaultNavigationOptions: ({ navigation }) => ({
             headerStyle: {
                 backgroundColor: '#0B0C10'
             },
@@ -88,13 +90,34 @@ const AboutNavigator = createStackNavigator(
         })
     }
 );
-
+const ResumeNavigator = createStackNavigator(
+    {
+        Resume: { screen: Resume }
+    },
+    {
+        defaultNavigationOptions: ({ navigation }) => ({
+            headerStyle: {
+                backgroundColor: '#0B0C10'
+            },
+            headerTintColor: '#16F1D4',
+            headerTitleStyle: {
+                color: '#16F1D4'
+            },
+            headerLeft: <Icon
+                name='file'
+                type='font-awesome'
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+            />
+        })
+    }
+);
 const ContactNavigator = createStackNavigator(
     {
         Contact: { screen: Contact }
     },
     {
-        defaultNavigationOptions: ({navigation}) => ({
+        defaultNavigationOptions: ({ navigation }) => ({
             headerStyle: {
                 backgroundColor: '#0B0C10'
             },
@@ -135,62 +158,76 @@ const CustomDrawerContentComponent = props => (
 );
 
 const MainNavigator = createDrawerNavigator(
-        {
-            Home: {
-                screen: HomeNavigator,
-                navigationOptions: {
-                    drawerIcon: ({ tintColor }) => (
-                        <Icon
-                            name='home'
-                            type='font-awesome'
-                            size={24}
-                            color={tintColor}
-                        />
-                    )
-                }
-            },
-            Directory: {
-                screen: DirectoryNavigator,
-                navigationOptions: {
-                    drawerIcon: ({ tintColor }) => (
-                        <Icon
-                            name='list'
-                            type='font-awesome'
-                            size={24}
-                            color={tintColor}
-                        />
-                    )
-                }
-            },
-            About: {
-                screen: AboutNavigator,
-                navigationOptions: {
-                    drawerLabel: 'About Us',
-                    drawerIcon: ({ tintColor }) => (
-                        <Icon
-                            name='info-circle'
-                            type='font-awesome'
-                            size={24}
-                            color={tintColor}
-                        />
-                    )
-                }
-            },
-            Contact: {
-                screen: ContactNavigator,
-                navigationOptions: {
-                    drawerLabel: 'Contact Us',
-                    drawerIcon: ({ tintColor }) => (
-                        <Icon
-                            name='address-card'
-                            type='font-awesome'
-                            size={24}
-                            color={tintColor}
-                        />
-                    )
-                }
+    {
+        Home: {
+            screen: HomeNavigator,
+            navigationOptions: {
+                drawerIcon: ({ tintColor }) => (
+                    <Icon
+                        name='home'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
             }
         },
+        About: {
+            screen: AboutNavigator,
+            navigationOptions: {
+                drawerLabel: 'About',
+                drawerIcon: ({ tintColor }) => (
+                    <Icon
+                        name='info-circle'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        },
+        Portfolio: {
+            screen: PortfolioNavigator,
+            navigationOptions: {
+                drawerIcon: ({ tintColor }) => (
+                    <Icon
+                        name='briefcase'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        },
+        Resume: {
+            screen: ResumeNavigator,
+            navigationOptions: {
+                drawerLabel: 'Resume',
+                drawerIcon: ({ tintColor }) => (
+                    <Icon
+                        name='file'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        },
+        Contact: {
+            screen: ContactNavigator,
+            navigationOptions: {
+                drawerLabel:'Contact Us',
+                drawerIcon: ({ tintColor }) => (
+                    <Icon
+                        name='address-card'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
+        }
+    },
     {
         drawerBackgroundColor: '#C5C6C7',
         contentComponent: CustomDrawerContentComponent
@@ -242,6 +279,9 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         color: '#16F1D4',
         fontSize: 24
+    },
+    drawerLabel: {
+        color: '#16F1D4'
     }
 });
 

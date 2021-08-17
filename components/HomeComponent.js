@@ -1,56 +1,68 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView, Image, StyleSheet, Animated } from 'react-native';
 import { Card } from 'react-native-elements';
-import { CAMPSITES } from '../shared/campsites';
-import { PROMOTIONS } from '../shared/promotions';
-import { PARTNERS } from '../shared/partners';
+import Constants from 'expo-constants';
 
-function RenderItem({item}) {
-    if (item) {
-        return (
-            <Card
-                featuredTitle={item.name}
-                image={require('./images/dev.png')}
-            >
-                <Text style={{margin: 10}}>
-                    {item.description}
-                </Text>
-            </Card>
-        );
-    }
-    return <View />;
-}
 
 class Home extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            campsites: CAMPSITES,
-            promotions: PROMOTIONS,
-            partners: PARTNERS
-        };
-    }
 
     static navigationOptions = {
-        title: 'Home'
+        title: 'Home',
     }
 
     render() {
         return (
             <ScrollView>
-            <RenderItem 
-                item={this.state.campsites.filter(campsite => campsite.featured)[0]}
-            />
-            <RenderItem 
-                item={this.state.promotions.filter(promotion => promotion.featured)[0]}
-            />
-            <RenderItem 
-                item={this.state.partners.filter(partner => partner.featured)[0]}
-            />
-        </ScrollView>
+                <View style={styles.container}>
+                    <Card title="Front End Development" style={styles.card_template}>
+                        <Image source={require('./images/dev.png')} style={styles.card_image} />
+                        <Text style={styles.text}>
+                            Markup and web languages such as HTML, CSS and JavaScript,
+                            specialized web editing software, image editing, accessibility,
+                            cross-browser issues and search engine optimisation.
+                        </Text>
+                    </Card>
+                    <Card title="Responsive User Interface" style={styles.card_template}>
+                        <Image source={require('./images/res.jpg')} style={styles.card_image} />
+                        <Text style={styles.text}>
+                            Responsive websites built for an optimal user experience that achieves your business goals.
+                        </Text>
+                    </Card>
+                    <Card title="Modern Websites" style={styles.card_template}>
+                        <Image source={require('./images/content.jpeg')} style={styles.card_image} />
+                        <Text style={styles.text}>
+                            Manage your website using the web's most popular content management system.
+                        </Text>
+                    </Card>
+                </View>
+            </ScrollView>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#E8EAED"
+    },
+    card_template: {
+        width: 350,
+        height: 350,
+    },
+    card_image: {
+        width: 350,
+        height: 350,
+        borderRadius: 10,
+        borderColor: '#0B0C10'
+    },
+    text: {
+        fontFamily: 'AvenirNext-BoldItalic',
+        fontWeight: 'bold',
+        marginTop: 10
+    }
+});
 
 export default Home;

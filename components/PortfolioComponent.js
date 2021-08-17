@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { View } from 'react-native';
 import { FlatList } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { CAMPSITES } from '../shared/campsites';
 
 
-class Directory extends Component {
+class Portfolio extends Component {
 
     constructor(props) {
         super(props);
@@ -14,7 +15,7 @@ class Directory extends Component {
     }
 
     static navigationOptions = {
-        title: 'Directory'
+        title: 'Portfolio'
     }
 
     render() {
@@ -36,9 +37,10 @@ class Directory extends Component {
                 renderItem={renderDirectoryItem}
                 keyExtractor={item => item.id.toString()}
             />
+           
         );
     }
 }
 
 
-export default Directory;
+export default Portfolio;
