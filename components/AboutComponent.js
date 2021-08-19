@@ -28,35 +28,35 @@ class About extends Component {
                     <View>
                         <Image source={require('./images/dcabout.jpg')} style={styles.image} />
                     </View>
-                    <Text style={styles.textcontent}>
+                    <Text style={styles.textContent}>
                         I’m a Front-End Developer located in Dallas/DFW Area. I have a serious passion for develop webs and UI effects,
                         animations and creating intuitive, dynamic user experiences. Well-organised person, problem solver, independent employee with high
                         attention to detail. Fan of video games, outdoor activities, TV series and Action movies. A family person and father of three kids,
                     </Text>
-                    <Text style={styles.textcontent}>
+                    <Text style={styles.textContent}>
                         {'\u2022'}  <Text style={styles.textBold}>Birthday:</Text> August 20, 1986
                     </Text>
-                    <Text style={styles.textcontent}>
+                    <Text style={styles.textContent}>
                         {'\u2022'}  <Text style={styles.textBold}>Age:</Text> 34
                     </Text>
-                    <Text style={styles.textcontent}>
+                    <Text style={styles.textContent}>
                         {'\u2022'}  <Text style={styles.textBold}>City:</Text> New Jersey, USA
                     </Text>
-                    <Text style={styles.textcontent}
+                    <Text style={styles.textContent}
                         onPress={() => Linking.openURL('https://danielconstante.netlify.app/')}
                     >
                         {'\u2022'}  <Text style={styles.textBold}>Website:</Text> www.danielconstante.netlify.app/
                     </Text>
-                    <Text style={styles.textcontent}>
+                    <Text style={styles.textContent}>
                         {'\u2022'}  <Text style={styles.textBold}>Email:</Text> daniel_constante@hotmail.com
                     </Text>
-                    <Text style={styles.textcontent} >
+                    <Text style={styles.textContent} >
                         {'\u2022'}  <Text style={styles.textBold}>Phone:</Text> 469-703-5148
                     </Text>
-                    <Text style={styles.textcontent}>
+                    <Text style={styles.textContent}>
                         {'\u2022'}  <Text style={styles.textBold}>Freelance:</Text> Available
                     </Text>
-                    <Text style={styles.textcontent}>
+                    <Text style={styles.textContent}>
                         I help designers, small agencies and businesses bring their ideas to life.
                         Powered by VS Code, Wordpress or Bootstrap. Interested in the entire frontend spectrum
                         and working on ambitious projects with positive people.
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         marginBottom: 20
     },
-    textcontent: {
+    textContent: {
         fontSize: 16,
         color: '#fff',
         alignContent: 'center',
@@ -150,76 +150,3 @@ const styles = StyleSheet.create({
 });
 export default About;
 
-{/* 
-
-                    <Card title="Web Developer & UI/UX Designer"
-                        wrapperStyle={{ margin: 20 }}
-                        avatar={{ source: require('./images/dcabout.jpg') }}
-                    >
-                        <Image source={require('./images/dcabout.jpg')} style={styles.image} />
-                        <Text style={styles.text}>
-                            I’m a Front-End Developer located in Dallas/DFW Area. I have a serious passion for develop webs and UI effects,
-                            animations and creating intuitive, dynamic user experiences. Well-organised person, problem solver, independent employee with high
-                            attention to detail. Fan of video games, outdoor activities, TV series and Action movies. A family person and father of three kids,
-                        </Text>
-                        <Text style={styles.textSize}>
-                            {'\u2022'}  <Text style={styles.textBold}>Birthday:</Text> August 20, 1986
-                        </Text>
-                        <Text style={styles.textSize}>
-                            {'\u2022'}  <Text style={styles.textBold}>Age:</Text> 34
-                        </Text>
-                        <Text style={styles.textSize}>
-                            {'\u2022'}  <Text style={styles.textBold}>City:</Text> New Jersey, USA
-                        </Text>
-                        <Text style={styles.textSize}
-                            onPress={() => Linking.openURL('https://danielconstante.netlify.app/')}
-                        >
-                            {'\u2022'}  <Text style={styles.textBold}>Website:</Text> www.danielconstante.netlify.app/
-                        </Text>
-                        <Text style={styles.textSize}>
-                            {'\u2022'}  <Text style={styles.textBold}>Email:</Text> daniel_constante@hotmail.com
-                        </Text>
-                        <Text style={styles.textSize} >
-                            {'\u2022'}  <Text style={styles.textBold}>Phone:</Text> 469-703-5148
-                        </Text>
-                        <Text style={styles.textSize}>
-                            {'\u2022'}  <Text style={styles.textBold}>Freelance:</Text> Available
-                        </Text>
-                        <Text style={styles.text}>
-                            I help designers, small agencies and businesses bring their ideas to life.
-                            Powered by VS Code, Wordpress or Bootstrap. Interested in the entire frontend spectrum
-                            and working on ambitious projects with positive people.
-                        </Text>
-                    </Card>
- card: {
-        color: '#0B0C10'
-    },
-    image: {
-        alignItems: 'center',
-        flex: 1,
-        width: 250,
-        height: 350,
-        borderRadius: 10,
-        margin: 20,
-        
-
-    },
-    text: {
-        fontSize: 18,
-        textAlign: 'left',
-        marginBottom: 10
-    },
-    textBold: {
-        fontWeight: "bold"
-    },
-    textSize: {
-        fontSize: 15,
-        marginBottom: 10
-    }
-
-
-
-
-
-
-*/}
