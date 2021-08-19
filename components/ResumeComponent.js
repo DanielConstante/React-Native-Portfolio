@@ -623,7 +623,7 @@ class Resume extends Component {
                         <View style={styles.line}></View>
                     </View>
 
-                    {/*                  Languages           */}
+                    {/*                  Projects and Colaborations           */}
 
                     <View>
                         <View>

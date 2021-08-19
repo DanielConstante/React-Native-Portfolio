@@ -129,44 +129,6 @@ const styles = StyleSheet.create({
     },
 });
 
-{/*                  Languages          
-    
-                    
-                    <Card title="Modern Websites" style={styles.card_template}>
-                        <Image source={require('./images/content.jpeg')} style={styles.card_image} />
-                        <Text style={styles.text}>
-                            Manage your website using the web's most popular content management system.
-                        </Text>
-                    </Card>
-                </View>
-            </ScrollView>
-        );
-    }
-}
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#E8EAED"
-    },
-    card_template: {
-        width: 350,
-        height: 350,
-    },
-    card_image: {
-        width: 350,
-        height: 350,
-        borderRadius: 10,
-        borderColor: '#0B0C10'
-    },
-    text: {
-        fontFamily: 'AvenirNext-BoldItalic',
-        fontWeight: 'bold',
-        marginTop: 10
-    }
-});
- */}
 
 export default Home;
