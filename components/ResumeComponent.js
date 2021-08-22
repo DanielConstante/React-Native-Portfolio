@@ -24,7 +24,7 @@ class Resume extends Component {
                     <View style={styles.item}>
                         <View style={styles.itemLeft}>
                             <View style={styles.circular}></View>
-                            <Text style={styles.itemText}>Daniel Constante</Text>
+                            <Text style={styles.itemText}>DANIEL CONSTANTE</Text>
                         </View>
                     </View>
                     <View>
@@ -149,7 +149,7 @@ class Resume extends Component {
                     {/*                   PROFESSIONAL EXPERIENCE           */}
                     <View>
                         <View>
-                            <Text style={styles.textTitle}>PROFESSIONAL EXPERIENCE</Text>
+                            <Text style={styles.textTitle}>Professional Experience</Text>
                         </View>
                         <View style={styles.item}>
                             <View style={styles.itemLeft}>
@@ -171,7 +171,7 @@ class Resume extends Component {
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Developed and initiated pro;ects. managed costs, and monitored performance.
+                                {'\u2022'} Developed and initiated projects. managed costs, and monitored performance.
                             </Text>
                         </View>
                         <View style={styles.lineEx}></View>
@@ -183,7 +183,7 @@ class Resume extends Component {
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Updated operational methods, oversaw accoonting procedures, tracked information and compiled data to improve efficiency.
+                                {'\u2022'} Updated operational methods, oversaw accounting procedures, tracked information and compiled data to improve efficiency.
                             </Text>
                         </View>
                         <View style={styles.line}></View>
@@ -208,13 +208,13 @@ class Resume extends Component {
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Provided primary customer support lo intemal and external customers.
+                                {'\u2022'} Provided primary customer support to internal and external customers.
                             </Text>
                         </View>
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Maintained customer satisfaction with forward•lhinking slrategies focused on addressing customer needs and resolving concerns.
+                                {'\u2022'} Maintained customer satisfaction with forward-thinking strategies focused on addressing customer needs and resolving concerns.
                             </Text>
                         </View>
                         <View style={styles.lineEx}></View>
@@ -232,7 +232,7 @@ class Resume extends Component {
                         <View style={styles.line}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Recommended products to customer$, thoroughly explaining details.
+                                {'\u2022'} Recommended products to customers, thoroughly explaining details.
                             </Text>
                         </View>
                         <View style={styles.line}></View>
@@ -252,25 +252,25 @@ class Resume extends Component {
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent}>
-                                Di1tinction Taz Tattos  |  Brooklyn, NY
+                                Distinction Taz Tattoos  |  Brooklyn, NY
                             </Text>
                         </View>
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Reconciled daity sales transactions 10 balance and log day-to-day revenue.
+                                {'\u2022'} Reconciled daily sales transactions to balance and log day-to-day revenue.
                             </Text>
                         </View>
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Delivered positive results by controling monlhly operations budget and limiting financial dicrepancies.
+                                {'\u2022'} Delivered positive results by controling monthly operations budget and limiting financial dicrepancies.
                             </Text>
                         </View>
                         <View style={styles.lineEx}></View>
                         <View>
                             <Text style={styles.textcontent} >
-                                {'\u2022'} Applied perlormance data to evaluate and improve operations, target current business conditions and forecast needs.
+                                {'\u2022'} Applied performance data to evaluate and improve operations, target current business conditions and forecast needs.
                             </Text>
                         </View>
                         <View style={styles.line}></View>
@@ -441,12 +441,6 @@ class Resume extends Component {
                         <View style={styles.line2}></View>
                         <View>
                             <Text style={styles.textcontent}>
-                                {'\u2022'} MongoDB
-                            </Text>
-                        </View>
-                        <View style={styles.line2}></View>
-                        <View>
-                            <Text style={styles.textcontent}>
                                 {'\u2022'} Heroku
                             </Text>
                         </View>
@@ -459,7 +453,7 @@ class Resume extends Component {
                         <View style={styles.line2}></View>
                         <View>
                             <Text style={styles.textcontent}>
-                                {'\u2022'} AWS (EC2, S3) Azure
+                                {'\u2022'} AWS (EC2, S3) 
                             </Text>
                         </View>
                         <View style={styles.line2}></View>
@@ -551,7 +545,7 @@ class Resume extends Component {
                         <View style={styles.lineCer}></View>
                         <View>
                             <Text style={styles.textcontent}>
-                                September 2021
+                            August 2021
                             </Text>
                         </View>
                         <View style={styles.lineCer}></View>
@@ -704,8 +698,8 @@ class Resume extends Component {
                             </View>
                         </View>
                         <View>
-                            <Text style={styles.textcontent} onPress={() => Linking.openURL('exp://exp.host/@danielconstante/nucampsite')} >
-                               URL to React-Native Portfolio 
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://expo.dev/@danielconstante/nucampsite')} >
+                               URL to React-Native Campsites 
                             </Text>
                             <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/React-Native-Campsites')}>
                                 Source Code/GitHub
@@ -784,7 +778,8 @@ class Resume extends Component {
 
 const styles = StyleSheet.create({
     color: {
-        backgroundColor: 'black'
+        backgroundColor: 'black',
+        height:4900,
     },
     textTitle: {
         color: '#16f1d4',

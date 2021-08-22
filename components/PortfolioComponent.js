@@ -214,12 +214,6 @@ class Portfolio extends Component {
                             />
                         </View>
                     </View>
-
-
-
-
-
-
                 </View>
             </ScrollView>
 
@@ -279,59 +273,7 @@ const styles = StyleSheet.create({
 
 });
 
-{/*                  Languages          
-     
-                   <View style={styles.itemLeft}>
-                                <View style={styles.circular}></View>
-                                <Text style={styles.itemText}>JavaScript Text Animations</Text>
-                            </View>
-                        </View>
-                        <View>
-                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://textanimations.netlify.app/')}>
-                               URL to Text Animations 
-                            </Text>
-                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/text-animations')}>
-                                Source Code/GitHub
-                            </Text>
-                        </View>
-                        <View style={styles.line}></View>
-                    </View>
-                    <View>
-                        <View style={styles.item}>
-                            <View style={styles.itemLeft}>
-                                <View style={styles.circular}></View>
-                                <Text style={styles.itemText}>Google Page Clone</Text>
-                            </View>
-                        </View>
-                        <View>
-                            <Text style={styles.textcontent}>
-                               No URL for copy right
-                            </Text>
-                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/google-clone')}>
- 
-    render() {
-        const { navigate } = this.props.navigation;
-        const renderDirectoryItem = ({ item }) => {
-            return (
-                <ListItem
-                    title={item.name}
-                    subtitle={item.description}
-                    onPress={() => navigate('CampsiteInfo', { campsiteId: item.id })}
-                    leftAvatar={{ source: require('./images/dev.png') }}
-                />
-            );
-        };
 
-        return (
-            <FlatList
-                data={this.state.campsites}
-                renderItem={renderDirectoryItem}
-                keyExtractor={item => item.id.toString()}
-            />
-           
-        );
-    }
-}
-
-*/}
 export default Portfolio;
+
+{/*       to do                  */}

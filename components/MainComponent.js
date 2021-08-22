@@ -58,7 +58,7 @@ const HomeNavigator = createStackNavigator(
                 color: '#16F1D4'
             },
             headerLeft: <Icon
-                name='home'
+                name='list'
                 type='font-awesome'
                 iconStyle={styles.stackIcon}
                 onPress={() => navigation.toggleDrawer()}
@@ -149,7 +149,7 @@ const CustomDrawerContentComponent = props => (
                     />
                 </View>
                 <View style={{ flex: 3 }}>
-                    <Text style={styles.drawerHeaderText}>DC Web Developer</Text>
+                    <Text style={styles.drawerHeaderText}>DC Front End Web Developer</Text>
                 </View>
             </View>
             <DrawerItems {...props} />
@@ -216,7 +216,7 @@ const MainNavigator = createDrawerNavigator(
         Contact: {
             screen: ContactNavigator,
             navigationOptions: {
-                drawerLabel:'Contact Us',
+                drawerLabel: 'Contact Us',
                 drawerIcon: ({ tintColor }) => (
                     <Icon
                         name='address-card'
@@ -229,7 +229,8 @@ const MainNavigator = createDrawerNavigator(
         }
     },
     {
-        drawerBackgroundColor: '#C5C6C7',
+        drawerBackgroundColor: '#A9A9A9',
+        drawerLabelColor: '#16F1D4',
         contentComponent: CustomDrawerContentComponent
 
     }
@@ -257,7 +258,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     drawerHeader: {
-        backgroundColor: '#0B0C10',
+        backgroundColor: '#A9A9A9',
         height: 140,
         alignItems: 'center',
         justifyContent: 'center',
@@ -265,7 +266,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     drawerHeaderText: {
-        color: '#16F1D4',
+        color: '#000000',
         fontSize: 20,
         fontWeight: 'bold',
         textAlign: 'center'
