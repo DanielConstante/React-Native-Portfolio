@@ -158,7 +158,7 @@ class Portfolio extends Component {
                             <Button
                                 title="Website Link"
                                 buttonStyle={{ backgroundColor: '#16f1d4', paddingHorizontal: 15 }}
-                                //onPress=
+                                onPress={() => Linking.openURL('https://expo.dev/@danielconstante/portfolio')}
                             />
                             <Button
                                 title="Source Code"

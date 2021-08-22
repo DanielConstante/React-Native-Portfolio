@@ -715,7 +715,7 @@ class Resume extends Component {
                             </View>
                         </View>
                         <View>
-                            <Text style={styles.textcontent}>
+                            <Text style={styles.textcontent} onPress={() => Linking.openURL('https://expo.dev/@danielconstante/portfolio')}>
                                URL to React-Native Portfolio 
                             </Text>
                             <Text style={styles.textcontent} onPress={() => Linking.openURL('https://github.com/DanielConstante/React-Native-Portfolio')}>
